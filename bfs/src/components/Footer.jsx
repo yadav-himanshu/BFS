@@ -76,7 +76,7 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   className="flex items-center"
                 >
-                  <MapPin className="mr-2 text-gray-400 flex-shrink-0" />
+                  <MapPin className="mr-1 text-gray-400 flex-shrink-0" />
                   Jai Ambe Soc. MG Cross, Road No.3, Kandivali West, Mumbai-67.
                 </a>
               </p>
