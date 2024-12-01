@@ -9,7 +9,7 @@ const Navbar = () => {
 
   return (
     <div className="bg-gradient-to-r from-gray-800 to-gray-900 text-white p-3">
-      <div className="flex items-center items-center justify-between max-w-[1200px] mx-auto">
+      <div className="flex items-center justify-between max-w-[1200px] mx-auto">
         {/* Logo */}
         <div className="flex items-center gap-2">
           <Link to="/home">
