@@ -6,6 +6,8 @@ import {Routes,Route, BrowserRouter} from 'react-router-dom'
 import About from './components/aboutPage/About'
 import Service from './components/servicesPage/Service'
 import HomePage from './components/homePage/HomePage'
+import GenerateReceipts from './components/adminData/GenerateReceipts'
+import CalculateSalary from './components/adminData/CalculateSalary'
 
 function App() {
 
@@ -19,6 +21,8 @@ function App() {
           <Route path='/services' element={<Service/>} />
           <Route path='/contact' element={<ContactForm/>} />
           <Route path='/about' element={<About/>} />
+          <Route path="/generate-receipts" element={<GenerateReceipts />} />
+          <Route path="/calculate-salary" element={<CalculateSalary />} />
         </Routes>
         
         <Footer/>

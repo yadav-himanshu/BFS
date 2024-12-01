@@ -5,7 +5,7 @@ const DesktopViewNav = () => {
     const location = useLocation();
     const isActive = (path) => location.pathname === path;
   return (
-    <div className="hidden md:flex gap-6 text-sm">
+    <div className="hidden md:flex gap-4 text-sm">
     <Link
       className={`font-semibold transition duration-300 ${
         isActive("/home")
