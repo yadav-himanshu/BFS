@@ -31,7 +31,7 @@ const Navbar = () => {
           <DesktopViewNav/>
           {/* Mobile Navigation */}
           <MobileViewNav/>
-          <AdminAuth/>
+          {/* <AdminAuth/> */}
         </div>
 
       </div>

@@ -1,6 +1,7 @@
 import { AlignJustify, Home, Info, Phone, Wrench } from "lucide-react";
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+import AdminAuth from "../adminData/AdminAuth";
 
 const MobileViewNav = () => {
     const [open, setOpen] = useState(false);
@@ -45,7 +46,7 @@ const MobileViewNav = () => {
             <Info size={20} /> About
           </Link>
           <Link
-            className={`flex items-center gap-2 font-semibold px-4 bt-1 pb-2 transition duration-300 ${
+            className={`flex items-center gap-2 font-semibold px-4 py-1 border-b border-gray-300 transition duration-300 ${
               isActive("/contact") ? "text-gray-900" : "hover:text-gray-700"
             }`}
             to="/contact"
@@ -53,6 +54,7 @@ const MobileViewNav = () => {
           >
             <Phone size={20} /> Contact
           </Link>
+          <AdminAuth/>
         </div>
       )}
     </div>

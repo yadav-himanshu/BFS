@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
+import AdminAuth from "../adminData/AdminAuth";
 
 const DesktopViewNav = () => {
     const location = useLocation();
@@ -46,6 +47,7 @@ const DesktopViewNav = () => {
     >
       Contact
     </Link>
+    <AdminAuth/>
   </div>
   )
 }

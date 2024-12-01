@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { User } from "lucide-react";
+import { User, UserCheck } from "lucide-react";
 import AdminSigninModal from "./AdminSigninModal";
 
 const AdminAuth = () => {
@@ -41,12 +41,14 @@ const AdminAuth = () => {
   return (
     <div className="">
       {!isLoggedIn && (
-        <button
+        <Link
           onClick={() => setShowModal(true)}
-          className="bg-blue-500 text-white px-4 py-1 rounded-md hover:bg-blue-600"
+          className="font-semibold transition duration-30 flex items-center gap-2 whitespace-nowrap px-4 md:px-0 bt-1 md:bt-0 pb-2 md:pb-0"
         >
+          <UserCheck size={20} className="text-black block md:hidden" />
           Admin Access
-        </button>
+        </Link>
+        
       )}
 
       {showModal && (

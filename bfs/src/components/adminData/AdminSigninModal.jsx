@@ -4,7 +4,7 @@ const AdminSigninModal = ({ credentials, handleLogin, setCredentials, setShowMod
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
       <div className="bg-gray-900 p-4 w-full max-w-[500px] rounded-md shadow-lg">
-        <h2 className="text-lg font-semibold mb-4">Admin Login</h2>
+        <h2 className="text-lg font-bold mb-4 text-white">Admin Login</h2>
         <input
           type="text"
           placeholder="Username"
